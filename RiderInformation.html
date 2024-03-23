@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="call-to-action">
+            <h1>Let’s ride</h1>
+            <a href="activities.html"><button class="apply-button">Home</button></a>
+            <a href="carselection.html"><button class="signup-button">Ride Selection</button></a>
+        </div>
+        <img src="images/BSUlogo.JPG" alt="Ride Sharing Image" class="main-image">
+    </div>
+
+    <main class="info-container">
+        <div class="info-card">
+            <h1>Rider Information</h1>
+            <form id="riderInfoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="course">Course of Study:</label>
+                <input type="text" id="course" name="course" required>
+
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required>
+
+                <label for="classification">Classification:</label>
+                <input type="text" id="classification" name="classification" required>
+
+                <label for="pickup">Pickup Location:</label>
+                <select id="pickup" name="pickup">
+                    <option value="mec">Dorm (MEC)</option>
+                    <option value="honors">Honors Cottage</option>
+                </select>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module">
+       
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyDZ2I-htROMqx7yXDegjhOLa75VIEYfCf0",
+          authDomain: "login-with-firsbase-db.firebaseapp.com",
+          databaseURL: "https://login-with-firsbase-db-default-rtdb.firebaseio.com",
+          projectId: "login-with-firsbase-db",
+          storageBucket: "login-with-firsbase-db.appspot.com",
+          messagingSenderId: "179762536361",
+          appId: "1:179762536361:web:17309d1398ca2201716eb8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+      <script src="UserScript.js"></script>
+</body>
+</html>

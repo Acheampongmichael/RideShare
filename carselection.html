@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Ride</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/BSUlogo.JPG" alt="University RideShare Logo" class="logo">
+        <div class="header-nav">
+            <a href="#">Get a ride</a>
+            <a href="#">Driver</a>
+            <a href="#">Rider</a>
+            <a href="#">Business</a>
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
+            <a href="#">EN</a>
+        </div>
+    </div>
+
+    <main class="ride-selection">
+        <h1>Select Your Ride</h1>
+        <div class="ride-options">
+            <div class="ride-card" onclick="selectRide('Wait & Save')">
+                <img src="images/waitsave.JPG" alt="Wait & Save">
+                <h2>Wait & Save</h2>
+                <p>Budget-friendly, Private</p>
+            </div>
+            <div class="ride-card" onclick="selectRide('Lyft')">
+                <img src="images/priority.JPG" alt="Lyft">
+                <h2>Carpool</h2>
+                <p>Efficient, Private</p>
+            </div>
+            <div class="ride-card" onclick="selectRide('Bikes & Scooters')">
+                <img src="images/bikes.JPG" alt="Bikes & Scooters">
+                <h2>Bikes & Scooters</h2>
+                <p>Efficient, Eco-friendly</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
