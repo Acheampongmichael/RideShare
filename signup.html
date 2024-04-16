@@ -73,7 +73,9 @@
             createUserWithEmailAndPassword(auth, EmailInp.value, PassInp.value).then((credentials)=>{
             set(ref(db, 'UsersAuthList/' + credentials.user.uid),{firstname: FnameInp.value,
             lastname: LnameInp.value
-        })
+        }).then(() => {
+                window.location.href = 'login.html'
+              })
         }).catch((error)=>{
             alert(error.message);
         })

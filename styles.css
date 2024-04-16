@@ -58,6 +58,7 @@ body, html {
 .main-image {
     max-width: 50%;
     height: auto;
+    border-radius: 10px;
 }
 
 .footer {
@@ -235,11 +236,7 @@ body, html {
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-top: 20px;
-    color: #333;
-}
+
 
 input[type="text"], select {
     width: 100%;
@@ -263,3 +260,7 @@ input[type="text"], select {
 .btn-submit:hover {
     background-color: #005f73;
 }
+
+
+
+
