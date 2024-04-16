@@ -59,28 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//RIDER INFORMATION
-/* 
-document.getElementById('riderInfoForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent the default form submit action
-    alert('Information Submitted!'); 
-
-    const name = document.getElementById('name').value;
-    const course = document.getElementById('course').value;
-    const studentId = document.getElementById('studentId').value;
-    const classification = document.getElementById('classification').value;
-    const pickup = document.getElementById('pickup').value;
-
-    //console.log('Rider Information:', { name, course, studentId, classification, pickup });
-
-    window.location.href = 'login.html';
-});
-
-*/
-
-
-
-
 //Ride Selection
 function selectRide(rideType) {
 
